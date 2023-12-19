@@ -52,3 +52,18 @@ Send Email
     "body": "Olá, %s, estamos te contatando para falar sobre o estágio. Então quando possível nos contate sr. %s."
 }
 ```
+
+Send List of Email
+
+- URL: /email/list/send
+- Method: POST
+- Request Body (JSON):
+
+``` json
+{
+    "recipient_name": ["Guilherme", "Lindomar"],
+    "recipient_email": ["guilhermebedan123@gmail.com", "lindomaromito@gmail.com"],
+    "subject": "Estágio",
+    "body": "Olá, %s, estamos te contatando para falar sobre o estágio. Então quando possível nos contate sr. %s."
+}
+```
